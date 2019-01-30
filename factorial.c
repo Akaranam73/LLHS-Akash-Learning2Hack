@@ -1,11 +1,5 @@
 #include <stdio.h>
 
-int main() {
-	int factorialOf = 5;
-	printf("A proper factorial of %i yields %i.\n", factorialOf, goodFactorial(factorialOf));
-	printf("An improper factorial of %i yields %i.", factorialOf, badFactorial(factorialOf));
-}
-
 int badFactorial(int x) {
 	int i;
 	for (i = 1; i < x; i++) {
@@ -21,4 +15,12 @@ int goodFactorial(int x) {
 		fact *= i;
 	}
 	return fact;
+}
+
+int main() {
+	int factorialOf = 5;
+	int good = goodFactorial(factorialOf);
+	int bad = badFactorial(factorialOf);
+	printf("A proper factorial of %i yields %i.\n", factorialOf, good);
+	printf("An improper factorial of %i yields %i.\n", factorialOf, bad);
 }
