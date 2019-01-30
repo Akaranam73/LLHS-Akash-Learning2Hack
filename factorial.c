@@ -2,7 +2,7 @@
 
 int main() {
 	int factorialOf = 5;
-	printf("A proper factorial of %i yields %i.", factorialOf, goodFactorial(factorialOf));
+	printf("A proper factorial of %i yields %i.\n", factorialOf, goodFactorial(factorialOf));
 	printf("An improper factorial of %i yields %i.", factorialOf, badFactorial(factorialOf));
 }
 
